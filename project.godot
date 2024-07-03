@@ -11,11 +11,27 @@ config_version=5
 [application]
 
 config/name="Farm2"
+run/main_scene="res://scenes/game.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://icon.svg"
+
+[display]
+
+window/size/viewport_width=576
+window/size/viewport_height=320
+window/size/window_width_override=1152
+window/size/window_height_override=640
+window/stretch/mode="viewport"
 
 [file_customization]
 
 folder_colors={
+"res://assets/": "yellow",
+"res://scenes/": "green",
+"res://scripts/": "teal",
 "res://shared_utils/": "gray"
 }
+
+[rendering]
+
+textures/canvas_textures/default_texture_filter=0
